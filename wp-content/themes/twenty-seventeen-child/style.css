@@ -1,0 +1,539 @@
+/*
+Theme Name: Twenty Seventeen Child
+Version: 1.0
+Description: A child theme of Twenty Seventeen
+Template: twentyseventeen
+Author: GORGIBUS Romain, ROBART Gaelle, DROMART Dylan, PHE Sophie-Lynda, VERHEYDE O'Bryan, COTTON Corentin, LAHOUSSE Thomas; COTTON Corentin
+*/
+
+/* Import parent theme CSS */
+@import url("../twentyseventeen/style.css");
+
+/* Import custom font */
+@font-face {
+	font-family: 'HouseMovements';
+	src: url('fonts/HouseMovements-Custom/HouseMovements-Custom.eot');
+	src: url('fonts/HouseMovements-Custom/HouseMovements-Custom.eot?#iefix') format('embedded-opentype'),
+		url('fonts/HouseMovements-Custom/HouseMovements-Custom.woff2') format('woff2'),
+		url('fonts/HouseMovements-Custom/HouseMovements-Custom.woff') format('woff'),
+		url('fonts/HouseMovements-Custom/HouseMovements-Custom.ttf') format('truetype'),
+		url('fonts/HouseMovements-Custom/HouseMovements-Custom.svg#HouseMovements-Custom') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+  /***********/
+ /* General */
+/***********/
+#wpadminbar ul#wp-admin-bar-root-default>li:hover {
+	color: #e3007b;
+}
+
+.wrap {
+  padding: 0;
+}
+
+h3 {
+	margin: 0;
+	padding: 0;
+	margin: 1em 0 0.5em 0;
+}
+
+p {
+	margin: 0 0 0.5em 0;
+}
+
+ul {
+  padding-left: 50px;
+	list-style-position: inside;
+	list-style: none;
+}
+
+div.entry-content ul li::before {
+	content: "● ";
+	color: #e3007b;
+}
+  /**********/
+ /* Header */
+/**********/
+.custom-logo-link img, body.home.title-tagline-hidden.has-header-image .custom-logo-link img, body.home.title-tagline-hidden.has-header-video .custom-logo-link img {
+  /* Max width/height match the original logo size */
+  max-width: 1535px;
+  max-height: 1535px;
+  /* Make sure height and width are the same, and don't exceed orignal size */
+  width: 250px;
+  height: 250px;
+}
+
+body.has-header-image .site-title, body.has-header-video .site-title, body.has-header-image .site-title a, body.has-header-video .site-title a {
+  color: #018462;
+  font-family: 'HouseMovements', sans-serif;
+	text-shadow: 1px 1px black;
+}
+
+body.has-header-image .site-description, body.has-header-video .site-description {
+  color: #FC0;
+  font-family: 'HouseMovements', sans-serif;
+	text-shadow: 1px 1px black;
+}
+
+.site-header .navigation-top .menu-scroll-down {
+	color: #FFF;
+}
+  /********/
+ /* Menu */
+/********/
+.navigation-top {
+	background-color: #b3cc00;
+	border: none;
+	box-shadow: 0px 0px 20px #000;
+}
+
+.navigation-top nav {
+    display: inline-block;
+    text-align: center;
+	width: 100%;
+	padding-left: 250px;
+}
+
+.main-navigation a {
+	color: white;
+	font-family: 'HouseMovements', sans-serif;
+	font-size: 1.25em;
+	padding: 0.75em 1.25em;
+	letter-spacing: 0.1em;
+}
+
+.main-navigation a:hover {
+	color: #FFF;
+	text-shadow: 1px 1px black;
+}
+
+.main-navigation ul ul {
+	background-color: #b3cc00;
+	border: 1px solid #b3cc00;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.main-navigation li li a {
+	letter-spacing: 0.1em;
+	text-align: center;
+}
+
+.main-navigation li li a:hover {
+	color: #e3007b;
+	background-color: #018462;
+	text-shadow: 1px 1px black;
+}
+
+.navigation-top .current-menu-item > a, .navigation-top .current_page_item > a {
+	color: #e3007b;
+	border-top: 1px solid #e3007b;
+	border-bottom: 1px solid #e3007b;
+}
+
+.main-navigation li li.focus > a, .main-navigation li li:focus > a, .main-navigation li li:hover > a, .main-navigation li li a:hover, .main-navigation li li a:focus, .main-navigation li li.current_page_item a:hover, .main-navigation li li.current-menu-item a:hover, .main-navigation li li .current_page_item a:focus, .main-navigation li li.current-menu-item a:focus {
+	color: #e3007b;
+}
+  /**********************************/
+ /* Responsive menu for smartphone */
+/**********************************/
+.menu-toggle {
+	color: #018462;
+	text-align: center;
+	font-family: 'HouseMovements', sans-serif;
+	letter-spacing: 0.1em;
+}
+
+.js .main-navigation.toggled-on > div > ul {
+	background-color: #333;
+	border: none;
+	letter-spacing: 0.1em;
+}
+
+.main-navigation li {
+	border: none;
+}
+
+.dropdown-toggle {
+	padding: 1em;
+	color: #FFF;
+}
+
+.main-navigation ul ul.toggled-on {
+	padding: 0;
+}
+
+  /*****************/
+ /* Article title */
+/*****************/
+
+/* For admin edit link */
+.post-edit-link {
+	color: red;
+}
+
+/* Title content that all users can see */
+.panel-content .wrap{
+	padding-top: 4em;
+}
+
+.panel-content {
+	background-color: #FFF;
+	color: #000;
+}
+
+.page .panel-content .entry-title, .page-title, body.page:not(.twentyseventeen-front-page) .entry-title {
+	color: #018462;
+	font-size: 2em;
+}
+
+body:not(.has-sidebar):not(.page-one-column) .page-header, body.has-sidebar.error404 #primary .page-header, body.page-two-column:not(.archive) #primary .entry-header, body.page-two-column.archive:not(.has-sidebar) #primary .page-header {
+  text-align: center;
+  width: 100%;
+}
+
+.page .panel-content .entry-title, .page-title, body.page:not(.twentyseventeen-front-page) .entry-title {
+	font-family: 'HouseMovements';
+	font-size: 5vh;
+	box-shadow: 0 4px 2px -2px;
+	width: 45%;
+	margin: auto;
+}
+  /*******************/
+ /* Article content */
+/*******************/
+.entry-content {
+	text-align: center;
+}
+
+.page:not(.home) #content {
+	background-color: #FFF;
+	color: #000;
+}
+
+.eventLink {
+	font-size: 1.5em;
+}
+
+.entry-content a {
+	color: #018462;
+	box-shadow: none; /* Remove underline on link */
+	transition: none;
+}
+
+.entry-content a:hover {
+	color: #e3007b;
+	box-shadow: none; /* Remove underline on link */
+	text-shadow: 1px 1px black;
+}
+
+.blog:not(.has-sidebar) #primary article, .archive:not(.page-one-column):not(.has-sidebar) #primary article, .search:not(.has-sidebar) #primary article, .error404:not(.has-sidebar) #primary .page-content, .error404.has-sidebar #primary .page-content, body.page-two-column:not(.archive) #primary .entry-content, body.page-two-column #comments {
+  width: 100%;
+  text-align: left;
+  float: none;
+}
+
+.entry-content a img {
+	box-shadow: none;
+	background-color: white;
+	margin: 8px;
+	border-radius: 5px;
+	vertical-align: middle;
+	padding: 5px;
+}
+
+  /*****************************************/
+ /* For eventbrite generated page content */
+/*****************************************/
+.has-sidebar #secondary {
+	display: none;
+}
+
+.has-sidebar:not(.error404) #primary {
+	width: 100%;
+}
+
+.entry-header .entry-title {
+	font-family: 'HouseMovements';
+	font-size: 5vh;
+	box-shadow: 0 4px 2px -2px;
+	width: 45%;
+	margin: auto;
+	text-align: center;
+	color: #018462;
+}
+
+.iee_event_meta .details {
+	width: 100%;
+	margin-top: 10px;
+}
+
+.iee_event_meta .iee_organizermain {
+	padding: 0;
+	background-color: #FFF;
+	border: none;
+	margin-bottom: 20px;
+}
+
+span.date:last-child {
+	margin: 5px;
+}
+
+body:not(.twentyseventeen-front-page) #comments {
+	display: none;
+}
+
+body:not(.twentyseventeen-front-page) .entry-content {
+	margin-bottom: 40px;
+}
+
+  /*********************************/
+ /* For "Les organisateurs" pages */
+/*********************************/
+.partner {
+	width: 50%;
+	margin: auto;
+	text-align: left;
+	padding-left: 150px;
+	padding-bottom: 10px;
+}
+
+.partnerLogo {
+	vertical-align: middle;
+}
+
+.partnerName {
+	padding-left: 25px;
+}
+
+  /**********/
+ /* Widget */
+/**********/
+.widget {
+	padding-bottom: 0;
+}
+.site-footer .widget-column.footer-widget-1 {
+	width: 50%;
+}
+
+.site-footer .widget-column.footer-widget-2 {
+	width: 50%;
+}
+
+.site-footer .widget-area {
+	padding-bottom: 0;
+}
+
+/* Contact widget */
+.contact {
+	font-family: 'HouseMovements', sans-serif;
+	font-size: 1.625rem;
+	margin-bottom: 0.5em;
+}
+
+a img.fbLink {
+	box-shadow: none;
+	width: 25px;
+}
+
+.site-footer .widget-area a {
+	box-shadow: none;
+	text-decoration: none;
+	color: #FFF;
+}
+
+.site-footer .widget-area a:hover {
+	box-shadow: none;
+	text-decoration: none;
+	color: #e3007b;
+}
+
+/* Counter widget */
+.site-footer .widget-area {
+	padding-top: 0;
+}
+
+.visitor-counter-heading {
+	color: #FFF;
+	font-family: 'HouseMovements', sans-serif;
+	text-align: center;
+	margin-bottom: 0.5em;
+}
+
+.counter-list {
+  display: block;
+  padding-bottom: 0.2em;
+	text-align: center;
+	padding-left: 0;
+}
+
+.counter {
+  border: none !important;
+  display: inline;
+  padding: 0.3em !important;
+	color: #FFF;
+}
+
+.widget ul li {
+	padding-top: 0;
+}
+
+  /**********/
+ /* Footer */
+/**********/
+.site-footer {
+	margin-top: 0;
+	background-color: #01664b;
+	color: #FFF;
+}
+
+.site-info {
+	width: 100%;
+	padding-bottom: 10px;
+	margin-top: 10px;
+}
+
+div.site-info ul {
+	padding: 10px 0;
+}
+
+.footerLogo {
+	display: inline;
+	height: 75px;
+	margin: auto;
+}
+
+li.footerLogo {
+	width: 16%;
+	float: left;
+}
+
+li.footerLogo img {
+	display: block;
+	margin: 0 auto;
+}
+
+.footerLogo img {
+	margin: 0.5em;
+	border-radius: 10px;
+	background-color: #FFF;
+	padding: 5px;
+}
+  /**********/
+ /* Credit */
+/**********/
+.site-footer .wrap {
+	padding-bottom: 0;
+}
+
+.credit p {
+	background-color: #222;
+	bottom: 0;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+.credit p a {
+	color: #FFF;
+	text-decoration: underline;
+}
+
+.credit p a:hover {
+	color: #b3cc00;
+}
+  /*****************************/
+ /* Additionnal media queries */
+/*****************************/
+@media screen and (max-width: 479px) {
+	/* Head */
+	body.has-header-image .site-title, body.has-header-video .site-title, body.has-header-image .site-title a, body.has-header-video .site-title a {
+		font-size: 1.5em;
+	}
+
+	body.has-header-image .site-description, body.has-header-video .site-description {
+		font-size: 1.1em;
+		text-align: right;
+	}
+
+	/* Header menu */
+	.menu-toggle {
+		font-size: 1.25em;
+	}
+
+	.navigation-top nav {
+		padding-left: 0;
+	}
+
+	/* Page content */
+	/* Fix page title position */
+	.panel-content .wrap {
+		padding-top: 2em;
+	}
+
+	.page .panel-content .entry-title, .page-title, body.page:not(.twentyseventeen-front-page) .entry-title {
+		margin-bottom: 2em;
+		font-size: 3.5vh;
+	}
+
+	/* Widget sizing */
+	.site-footer .widget-column.footer-widget-1 {
+		width: 100%;
+		padding-bottom: 15px;
+	}
+
+	.site-footer .widget-column.footer-widget-2 {
+		width: 100%;
+		padding-bottom: 15px;
+	}
+}
+
+@media screen and (min-width: 30em) {
+	/* Header menu */
+	.navigation-top nav {
+		padding-left: 0;
+	}
+
+	/* Widget sizing */
+	.site-footer .widget-column.footer-widget-1 {
+		width: 100%;
+		padding-bottom: 15px;
+	}
+
+	.site-footer .widget-column.footer-widget-2 {
+		width: 100%;
+		padding-bottom: 15px;
+	}
+}
+
+@media screen and (min-width: 48em) {
+	/* Head */
+	.custom-logo-link img, body.home.title-tagline-hidden.has-header-image .custom-logo-link img, body.home.title-tagline-hidden.has-header-video .custom-logo-link img {
+		height: 300px;
+		width: 300px;
+	}
+
+	body.has-header-image .site-title, body.has-header-video .site-title, body.has-header-image .site-title a, body.has-header-video .site-title a {
+		font-size: 2em;
+	}
+
+	body.has-header-image .site-description, body.has-header-video .site-description {
+		font-size: 1.5em;
+	}
+
+	/* Header menu */
+	.navigation-top nav {
+		padding-left: 250px;
+	}
+
+	/* Widget sizing */
+	.site-footer .widget-column.footer-widget-1 {
+		width: 50%;
+		padding-bottom: 15px;
+	}
+
+	.site-footer .widget-column.footer-widget-2 {
+		width: 50%;
+		padding-bottom: 15px;
+	}
+}
